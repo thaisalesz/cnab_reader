@@ -1,7 +1,7 @@
 # cnab_reader
-##Web app to read cnab files in .txt format 
+## Web app to read cnab files in .txt format 
 
-###This CNAB reader was developed in Python and Django framework.
+### This CNAB reader was developed in Python and Django framework.
 
 **To run the the app you can follow this simple steps:**
 1. Clone this repository to your machine, make sure you have python 3.0 installed
@@ -14,9 +14,9 @@ Have fun!
 
 
 
-##Aplicativo Web para ler arquivos CNAB em formato .txt
+## Aplicativo Web para ler arquivos CNAB em formato .txt
 
-###Desenvolvido em Python e Django framework
+### Desenvolvido em Python e Django framework
 
 **Para rodar o app você pode seguir os seguintes passos:**
 1. Clone esse repositório para sua máquina, certifique-se que tenha Python 3.0 instalado
