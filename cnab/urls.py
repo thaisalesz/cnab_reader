@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import ver_tela
+from .views import home
 
 urlpatterns = [
-    path('cnab', ver_tela, name='home')
+    path('cnab', home, name='home')
 ]
 

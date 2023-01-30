@@ -1,0 +1,51 @@
+{% load static %}
+{% load index %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>CNAB</title>
+</head>
+<body>
+    <main>
+        <h1>Transações</h1>
+        <table>
+            {% for i, store in db_data.items %}
+            <tr>
+                <th>Tipo de transação</th>
+                <th>Data</th>
+                <th>Valor</th>
+                <th>CPF</th>
+                <th>Cartão</th>
+                <th>Hora</th>
+                <th>Proprietário</th>
+                <th>Loja</th>
+            </tr>
+            {% for entry in store %}
+            <tr>
+                <td>{{entry.transaction}}</td>
+                <td>{{entry.data}}</td>
+                <td>{{entry.valor}}</td>
+                <td>{{entry.cpf}}</td>
+                <td>{{entry.cartao}}</td>
+                <td>{{entry.hora}}</td>
+                <td>{{entry.dono_loja}}</td>
+                <td>{{entry.nome_loja}}</td>
+            </tr>
+            
+            {% endfor %}
+
+            <tr>
+                <td class="table__balance" colspan="8">Saldo: R${{store|index:-1}}</td>
+            </tr>
+            
+            {% endfor %}
+
+        </table>
+    </main>
+
+</body>
+</html>
