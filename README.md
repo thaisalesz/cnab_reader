@@ -22,7 +22,7 @@ Have fun!
 1. Clone esse repositório para sua máquina, certifique-se que tenha Python 3.0 instalado
 2. Configure um ambiente de desenvolvimento (documentação: https://docs.python.org/3/library/venv.html)
 3. Instale os pacotes necessários rodando 'pip install -r requirements.txt' na linha de comando
-4. Rode as migrações para consigurar um banco de dados Sqlite3
+4. Rode as migrações para configurar um banco de dados Sqlite3
 5. Rode 'python manage.py runserver' para inciar o servidor localmente
 
 Divirta-se!
